@@ -1,0 +1,17 @@
+curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8000/users/ -d "{\"id\":\"2015\",\"email\":\"apatil1@enphaseenergy.com\",\"location\":\"Banglore\",\"first_name\":\"Ashwin\",\"last_name\":\"Patil\",\"role\":\"HR\",\"active_user\":\"1\",\"created_at\":\"1637937990"\"}"
+
+
+
+curl -X GET http://127.0.0.1:8000/users?email=apatil10@enphaseenergy.com
+
+
+
+curl -X GET http://127.0.0.1:8000/users/
+
+
+
+curl -X GET http://127.0.0.1:8000/users/2014/
+
+
+
+curl -X PATCH -H "Content-Type: application/json" http://127.0.0.1:8000/users/2014/ -d "{\"id\":\"2025\",\"email\":\"apatil9@enphaseenergy.com\",\"location\":\"Bang\"}"
